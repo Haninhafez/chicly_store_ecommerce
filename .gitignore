@@ -20,4 +20,4 @@ mapping.txt
 
 # Key stores (if any)
 *.jks
-*.keystore
+*.keystorelib/features/checkout/stripe_payment/keys.env
