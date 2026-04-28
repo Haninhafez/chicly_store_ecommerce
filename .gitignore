@@ -1,0 +1,23 @@
+# Flutter/Dart build artifacts
+.dart_tool/
+build/
+*.apk
+*.aab
+*.dill
+*.so
+mapping.txt
+
+# Other common build outputs
+*.lock
+*.log
+*.pid
+*.tmp
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Key stores (if any)
+*.jks
+*.keystore

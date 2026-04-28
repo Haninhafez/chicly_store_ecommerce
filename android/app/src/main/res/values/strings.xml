@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">ChiclyApp</string>
+<string name="facebook_app_id">1141582744610963</string>
+ <string name="facebook_client_token">4a96041ae64d8c73debf684c491ff041</string>
+<string name="fb_login_protocol_scheme">fb1141582744610963</string>
+
+</resources>

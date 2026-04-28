@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "959659100567",
+    "project_id": "chicly-store",
+    "storage_bucket": "chicly-store.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959659100567:android:11a0ee253ff9c3072f1cd2",
+        "android_client_info": {
+          "package_name": "com.example.chicly_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959659100567-ma1qvvvoo5dihu2uhr4nir0qn99k68h1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chicly_store",
+            "certificate_hash": "a02426132bc24b7a10c0232b1e5333176d00c111"
+          }
+        },
+        {
+          "client_id": "959659100567-2hmkiplep047933i5au3hqa454172abj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2uZ0K9eQKDM4fJXJdSj-IREwEmxiFvek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959659100567-2hmkiplep047933i5au3hqa454172abj.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "959659100567-igphiuq3md7o57vs04p42pooll0l9k4h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.chiclyStore"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
