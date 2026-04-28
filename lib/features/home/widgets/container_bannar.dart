@@ -1,4 +1,4 @@
-import 'package:chicly_store/core/constant/custom_text_poppins.dart';
+import 'package:chicly_store/core/constant/custom_text_style.dart';
 import 'package:flutter/material.dart';
 
 class ContainerBanar extends StatelessWidget {

@@ -1,5 +1,5 @@
 import 'package:chicly_store/core/constant/color_app.dart';
-import 'package:chicly_store/core/constant/custom_text_poppins.dart';
+import 'package:chicly_store/core/constant/custom_text_style.dart';
 import 'package:chicly_store/core/constant/helper.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';

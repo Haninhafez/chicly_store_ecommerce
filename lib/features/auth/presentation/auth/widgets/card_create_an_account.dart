@@ -4,7 +4,7 @@ import 'package:chicly_store/features/auth/presentation/auth/widgets/custom_text
 import 'package:chicly_store/features/auth/presentation/auth/widgets/password_field.dart';
 import 'package:chicly_store/core/constant/color_app.dart';
 import 'package:chicly_store/core/constant/controller_button.dart';
-import 'package:chicly_store/core/constant/custom_text_poppins.dart';
+import 'package:chicly_store/core/constant/custom_text_style.dart';
 import 'package:chicly_store/core/constant/helper.dart';
 import 'package:chicly_store/core/routes/app_routes.dart';
 import 'package:chicly_store/core/utils/form_validators.dart';
