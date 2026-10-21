@@ -38,10 +38,10 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^9.1.1
-  flutter_facebook_auth: ^6.0.4
+  # flutter_facebook_auth: any
   flutter_secure_storage: ^9.2.4
   flutter_stripe: ^12.4.0
-  font_awesome_flutter: ^10.12.0
+  font_awesome_flutter: 11.0.0
   google_fonts: ^8.0.1
   google_sign_in: ^6.2.1
   image_picker: ^1.2.1

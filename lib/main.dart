@@ -6,7 +6,6 @@ import 'package:chicly_store/core/constant/local_storage_service.dart';
 import 'package:chicly_store/core/routes/app_pages.dart';
 import 'package:chicly_store/core/routes/app_routes.dart';
 import 'package:chicly_store/features/cart/cubit/cart_shopping_cubit.dart';
-import 'package:chicly_store/features/checkout/stripe_payment/keys.env';
 import 'package:chicly_store/features/home/screen/home_screen.dart';
 import 'package:chicly_store/features/product/cubit/product_cubit.dart';
 import 'package:chicly_store/features/product/service/get_product.dart';
@@ -22,7 +21,7 @@ import 'package:provider/provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Stripe.publishableKey = StripeKeys.publicKey;
+  // Stripe.publishableKey = StripeKeys.publicKey;
   await Stripe.instance.applySettings();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   await LocalStorageService.init();

@@ -13,7 +13,7 @@ class SocialLogin extends StatelessWidget {
       children: [
         IconButton(
           onPressed: () {
-            signInWithFacebook(context);
+            // signInWithFacebook(context);
           },
           icon: Icon(Icons.facebook, color: Colors.blue, size: 40),
         ),

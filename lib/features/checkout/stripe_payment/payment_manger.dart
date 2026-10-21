@@ -1,5 +1,5 @@
 
-import 'package:chicly_store/features/checkout/stripe_payment/keys.env';
+// import 'package:chicly_store/features/checkout/stripe_payment/keys.env';
 import 'package:dio/dio.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
 
@@ -32,7 +32,7 @@ abstract class PaymentManger {
       'https://api.stripe.com/v1/payment_intents',
       options: Options(
         headers: {
-          'Authorization': 'Bearer ${StripeKeys.secretKey}',
+          // 'Authorization': 'Bearer ${StripeKeys.secretKey}',
           'Content-Type': 'application/x-www-form-urlencoded',
         },
       ),

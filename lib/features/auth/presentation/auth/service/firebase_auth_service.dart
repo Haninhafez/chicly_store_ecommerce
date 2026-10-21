@@ -7,7 +7,7 @@ import 'package:chicly_store/core/utils/snack_bar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
+// import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -107,44 +107,44 @@ Future<String?> signInFirebase(
   }
 }
 
-Future<UserCredential?> signInWithFacebook(BuildContext context) async {
-  try {
-    final LoginResult loginResult = await FacebookAuth.instance.login();
+// Future<UserCredential?> signInWithFacebook(BuildContext context) async {
+//   try {
+//     final LoginResult loginResult = await FacebookAuth.instance.login();
 
-    if (loginResult.status != LoginStatus.success) {
-      print("Facebook login failed");
-      return null;
-    }
-    final OAuthCredential facebookAuthCredential =
-        FacebookAuthProvider.credential(loginResult.accessToken!.token);
-    UserCredential userCredential = await FirebaseAuth.instance
-        .signInWithCredential(facebookAuthCredential);
-    final user = userCredential.user!;
-    if (user != null) {
-      await FirebaseFirestore.instance.collection('users').doc(user.uid).set({
-        'userName': user.displayName,
-        'email': user.email,
-        'createdAt': FieldValue.serverTimestamp(),
-      }, SetOptions(merge: true));
-      String? token = await user.getIdToken(true);
-      await LocalStorageService.saveLogin(
-        userId: user.uid,
-        userName: user.displayName!,
-        userEmail: user.email!,
-        isLoggedIn: true,
-        accessToken: token!,
-        userPhone: user.phoneNumber ?? "",
-      );
+//     if (loginResult.status != LoginStatus.success) {
+//       print("Facebook login failed");
+//       return null;
+//     }
+//     final OAuthCredential facebookAuthCredential =
+//         FacebookAuthProvider.credential(loginResult.accessToken!.token);
+//     UserCredential userCredential = await FirebaseAuth.instance
+//         .signInWithCredential(facebookAuthCredential);
+//     final user = userCredential.user!;
+//     if (user != null) {
+//       await FirebaseFirestore.instance.collection('users').doc(user.uid).set({
+//         'userName': user.displayName,
+//         'email': user.email,
+//         'createdAt': FieldValue.serverTimestamp(),
+//       }, SetOptions(merge: true));
+//       String? token = await user.getIdToken(true);
+//       await LocalStorageService.saveLogin(
+//         userId: user.uid,
+//         userName: user.displayName!,
+//         userEmail: user.email!,
+//         isLoggedIn: true,
+//         accessToken: token!,
+//         userPhone: user.phoneNumber ?? "",
+//       );
 
-      Navigator.pushReplacementNamed(context, AppRoutes.home);
-      return userCredential;
-    } else {
-      return null;
-    }
-  } on Exception catch (e) {
-    showSnackBar(context: context, message: "${e.toString()}");
-  }
-}
+//       Navigator.pushReplacementNamed(context, AppRoutes.home);
+//       return userCredential;
+//     } else {
+//       return null;
+//     }
+//   } on Exception catch (e) {
+//     showSnackBar(context: context, message: "${e.toString()}");
+//   }
+// }
 
 Future<void> signInWithGoogle(BuildContext context) async {
   try {
